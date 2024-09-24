@@ -38,7 +38,9 @@
       </div>
       <div class="flex items-center gap-2">
         <img src="./assets/coin.png" alt="" />
-        <a class="lg:text-2xl text-xl font-black">10000 BDT</a>
+        <a class="lg:text-2xl text-xl font-black" id="main-balance"
+          >150000 BDT</a
+        >
       </div>
     </header>
 
@@ -64,9 +66,11 @@
             <img src="./assets/noakhali.png" alt="" />
             <div>
               <button
-                class="flex items-center gap-2 text-xl font-black bg-slate-300 p-2 w-[150px] rounded-xl"
+                class="flex items-center gap-2 text-xl font-black bg-slate-300 p-2 w-[180px] rounded-xl"
               >
-                <img class="" src="./assets/coin.png" alt="" />10 BDT
+                <img class="" src="./assets/coin.png" alt="" />
+                <div id="donate-1">00</div>
+                BDT
               </button>
               <h1 class="p-2 lg:text-3xl text-2xl font-black">
                 Donate for Flood at Noakhali, Bangladesh
@@ -80,16 +84,45 @@
                 the lives of those in need.
               </p>
               <input
+                id="donate-input-1"
                 class="border-2 w-full rounded-xl h-12 p-2 font-black text-lg bg-slate-50"
                 type="text"
                 placeholder="Write Donation Amount"
               />
-              <button
-                id="donate-button-1"
-                class="btn bg-lime-400 text-xl font-black mt-4 block w-full"
-              >
-                Donate Now
-              </button>
+              <div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button
+                  class="btn bg-lime-400 text-xl font-black mt-4 block w-full"
+                  onclick="donate_button_1.showModal()"
+                >
+                  Donate Now
+                </button>
+                <dialog
+                  id="donate_button_1"
+                  class="modal modal-bottom sm:modal-middle"
+                >
+                  <div class="modal-box">
+                    <h3 class="text-3xl text-center font-black">Congrates!</h3>
+                    <img
+                      class="ml-[210px] mt-4"
+                      src="./assets/coin.png"
+                      alt=""
+                    />
+                    <p class="py-4 text-center">
+                      You have Donated for Humankind
+                    </p>
+                    <h1 class="text-2xl text-center font-black">
+                      Successfully
+                    </h1>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close Confirmation</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
             </div>
           </div>
         </div>
@@ -169,6 +202,7 @@
     </main>
 
     <!-- JS Connection -->
+    <script src="./reusableFunctions.js"></script>
     <script src="./donate.js"></script>
   </body>
 </html>
