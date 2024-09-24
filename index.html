@@ -11,8 +11,33 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
+
   <body>
-    <h1></h1>
+    <header class="flex items-center justify-between lg:p-12 p-6 bg-amber-50">
+      <a class="btn btn-ghost font-black text-2xl bg-lime-400">Blog</a>
+      <div class="flex items-center gap-4">
+        <img src="./assets/logo.png" alt="" />
+        <a class="text-2xl font-black">Donate Bangladesh</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="./assets/coin.png" alt="" />
+        <a class="text-2xl font-black">1000 BDT</a>
+      </div>
+    </header>
   </body>
 </html>
