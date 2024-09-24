@@ -80,7 +80,7 @@ document
         const formattedDate = currentDate.toLocaleDateString("en-GB", options);
 
         const p = document.createElement("p");
-        p.innerHTML = `<span style="color: black; text-align:center; font-size:20px; font-weight:900; margin-left:40px;">${totalDonateBalance2} Taka is Donated for Flood at Noakhali, Bangladesh</span> <br> 
+        p.innerHTML = `<span style="color: black; text-align:center; font-size:20px; font-weight:900; margin-left:40px;">${totalDonateBalance2} Taka is Donated for Flood at Feni, Bangladesh</span> <br> 
                <span style="margin-left:40px; color: black; ">Date: ${formattedDate} ${time} GMT +0600 (Bangladesh Standard Time)</span>`;
 
         document.getElementById("donate-history-cards").appendChild(p);
@@ -127,7 +127,7 @@ document
         const formattedDate = currentDate.toLocaleDateString("en-GB", options);
 
         const p = document.createElement("p");
-        p.innerHTML = `<span style="color: black; text-align:center; font-size:20px; font-weight:900; margin-left:40px;">${totalDonateBalance3} Taka is Donated for Flood at Noakhali, Bangladesh</span> <br> 
+        p.innerHTML = `<span style="color: black; text-align:center; font-size:20px; font-weight:900; margin-left:40px;">${totalDonateBalance3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</span> <br> 
                <span style="margin-left:40px; color: black; ">Date: ${formattedDate} ${time} GMT +0600 (Bangladesh Standard Time)</span>`;
 
         document.getElementById("donate-history-cards").appendChild(p);

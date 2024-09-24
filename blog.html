@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- Tailwind CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="lg:mt-12 lg:text-5xl font-black text-center mb-20">
+        FAQ (Frequently Asked Questions)
+      </h1>
+      <div>
+        <div
+          class="collapse collapse-plus bg-base-200 lg:w-[1000px] lg:ml-[250px]"
+        >
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-2xl font-black">
+            1. What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content text-justify text-lg font-semibold">
+            <p>
+              The Document Object Model (DOM) is a programming interface that
+              represents the structure of web documents, such as HTML and XML,
+              as a hierarchical tree of objects. Each node in the tree
+              corresponds to different parts of the document, including
+              elements, attributes, and text. This model allows developers to
+              dynamically manipulate content, structure, and style on a web page
+              using JavaScript, enabling real-time updates without full page
+              reloads. The DOM facilitates event handling, allowing developers
+              to create interactive web applications by responding to user
+              actions like clicks and keyboard input. It is designed to be
+              cross-platform and language-independent, although JavaScript is
+              the primary language used to interact with it due to its seamless
+              integration with web browsers. Additionally, the DOM is
+              standardized by the World Wide Web Consortium (W3C), ensuring
+              consistency across different browsers. This standardization
+              simplifies the development process and helps create reliable web
+              applications that function across various platforms. Overall, the
+              DOM is crucial for building dynamic and interactive web
+              experiences, giving developers control over the structure and
+              behavior of web pages programmatically.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="collapse collapse-plus bg-base-200 lg:w-[1000px] lg:ml-[250px]"
+        >
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-2xl font-black">
+            2. How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content text-justify text-lg font-semibold">
+            <p>
+              Selecting elements from the Document Object Model (DOM) is crucial
+              for dynamic web page manipulation using JavaScript. Several
+              methods facilitate this process: <br />
+              1. getElementById: Retrieves a single element based on its unique
+              ID, allowing direct access to that specific element. <br />
+              2. getElementsByClassName: Selects all elements that share a
+              specified class name, returning a live HTMLCollection that updates
+              automatically as the document changes. <br />
+              3. getElementsByTagName: Similar to the class name method, this
+              selects elements by their tag name, also returning a live
+              HTMLCollection, which can be useful for accessing groups of
+              elements. <br />
+              4. querySelector: This versatile method selects the first element
+              matching a specified CSS selector. It returns a single element or
+              null if no match exists, making it straightforward for targeted
+              selections. <br />
+              5. querySelectorAll: This method retrieves all elements matching a
+              given CSS selector, returning a static NodeList that does not
+              update with changes in the document.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="collapse collapse-plus bg-base-200 lg:w-[1000px] lg:ml-[250px]"
+        >
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-2xl font-black">
+            3. What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content text-justify text-lg font-semibold">
+            <p>
+              Event delegation is a DOM manipulation technique that allows a
+              single event listener to manage events for multiple child elements
+              by attaching it to a common parent element. Instead of assigning
+              individual listeners to each child element, this method leverages
+              the event bubbling mechanism, where an event triggered on a child
+              element propagates upward to its parent. When an event occurs, the
+              parent listener can respond to it, effectively handling events for
+              all child elements, including those added dynamically after the
+              listener has been set up.It reduces the total number of event
+              listeners, which can enhance performance, especially when dealing
+              with many child elements.Newly added child elements automatically
+              inherit the parents event listener, eliminating the need for
+              additional setup.By centralizing event handling logic, event
+              delegation reduces complexity, making the codebase easier to
+              maintain.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="collapse collapse-plus bg-base-200 lg:w-[1000px] lg:ml-[250px] mb-8"
+        >
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-2xl font-black">
+            4. How do you manipulate an element's attributes and styles using
+            the DOM?
+          </div>
+          <div class="collapse-content text-justify text-lg font-semibold">
+            <p>
+              Manipulating an element's attributes and styles in the DOM can be
+              accomplished using various JavaScript methods and properties.
+              <br />
+              <br />
+              Attribute Manipulation: <br />
+              <br />
+              getAttribute: This method retrieves the value of a specified
+              attribute from an element. For example,
+              element.getAttribute('attributeName') returns the current value.
+              <br />
+              setAttribute: This sets or updates the value of a specified
+              attribute. If the attribute does not exist, it will be created.
+              For instance, element.setAttribute('attributeName', 'newValue')
+              sets the attribute to a new value. <br />
+              removeAttribute: This method removes a specified attribute from
+              the element, allowing for cleaner HTML when necessary. For
+              example, element.removeAttribute('attributeName'). <br />
+              Direct Property Access: Some attributes can be accessed directly
+              as properties, such as element.id = 'newId' to change the
+              element's ID or element.className = 'newClass' to update its
+              class. <br />
+              <br />
+              Style Manipulation: <br />
+              <br />
+              style Property: You can manipulate an elements inline styles using
+              the style property. For example, element.style.color = 'red'
+              changes the text color to red. <br />
+              By using these methods and properties, developers can dynamically
+              modify both the attributes and styles of DOM elements, enhancing
+              interactivity and responsiveness in web applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
