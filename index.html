@@ -49,15 +49,23 @@
 
       <section>
         <div class="mt-20 lg:ml-[580px] ml-[170px]">
-          <button class="btn mr-8 lg:text-2xl text-xl font-black bg-lime-400">
+          <button
+            id="donation"
+            class="btn mr-8 lg:text-2xl text-xl font-black bg-lime-400"
+          >
             Donation
           </button>
-          <button class="btn lg:text-2xl text-xl font-black">History</button>
+          <button
+            id="donation-history"
+            class="btn lg:text-2xl text-xl font-black"
+          >
+            History
+          </button>
         </div>
       </section>
 
       <!-- Donate Cards -->
-      <section class="mt-20 space-y-10 lg:mb-20">
+      <section id="donate-cards" class="mt-20 space-y-10 lg:mb-20">
         <!-- Card-1 -->
         <div
           class="hero bg-base-200 lg:w-[1200px] lg:ml-[150px] lg:h-[470px] rounded-xl w-[600px] h-[900px] ml-4"
@@ -268,10 +276,17 @@
           </div>
         </div>
       </section>
+
+      <!-- History -->
+      <section
+        id="donate-history-cards"
+        class="hidden mt-40 lg:ml-8 ml-4 p-2 space-y-10 mb-10"
+      ></section>
     </main>
 
     <!-- JS Connection -->
     <script src="./reusableFunctions.js"></script>
     <script src="./donate.js"></script>
+    <script src="./features.js"></script>
   </body>
 </html>

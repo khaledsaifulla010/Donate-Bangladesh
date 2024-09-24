@@ -17,3 +17,10 @@ function getMainBalanceTextValueById() {
   const MainBalanceTextNumber = parseFloat(mainBalanceTextValue);
   return MainBalanceTextNumber;
 }
+
+function showSectionById(id) {
+  document.getElementById("donate-cards").classList.add("hidden");
+  document.getElementById("donate-history-cards").classList.add("hidden");
+
+  document.getElementById(id).classList.remove("hidden");
+}
